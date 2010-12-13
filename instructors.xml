@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instructors>
+
+<instructor id="01" name="Ανδρουτσόπουλος">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+<unavailable day="Friday" startTime="9"/>
+<unavailable day="Friday" startTime="11"/>
+<unavailable day="Friday" startTime="13"/>
+<unavailable day="Friday" startTime="15"/>
+<unavailable day="Friday" startTime="17"/>
+</instructor>
+
+<instructor id="02" name="Αποστολόπουλος">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="03" name="Βαζιργιάννης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="04" name="Γιακουμάκης"/>
+
+<instructor id="05" name="Γιαννακουδάκης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="06" name="Δημέλη">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="07" name="Καλογεράκη">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="08" name="Κατερίνης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="09" name="Κοντογιάννης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="10" name="Κουρκουμπέτης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="11" name="Κωνσταντόπουλος">
+<unavailable day="Tuesday" startTime="9"/>
+<unavailable day="Tuesday" startTime="11"/>
+<unavailable day="Tuesday" startTime="13"/>
+<unavailable day="Tuesday" startTime="15"/>
+<unavailable day="Tuesday" startTime="17"/>
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+<unavailable day="Friday" startTime="9"/>
+<unavailable day="Friday" startTime="11"/>
+<unavailable day="Friday" startTime="13"/>
+<unavailable day="Friday" startTime="15"/>
+<unavailable day="Friday" startTime="17"/>
+</instructor>
+
+<instructor id="12" name="Λυπιτάκης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="13" name="Μαριάς">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="14" name="Ξυλωμένος">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="15" name="Παπαϊωάννου">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="16" name="Σύρης">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="17" name="Τουμπής">
+<unavailable day="Wednesday" startTime="9"/>
+<unavailable day="Wednesday" startTime="11"/>
+<unavailable day="Wednesday" startTime="13"/>
+</instructor>
+
+<instructor id="18" name="Φουστούκου"/>
+
+</instructors>

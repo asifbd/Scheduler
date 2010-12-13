@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<courses>
+
+<semester id="semester1">
+<course id="course01" name="Διακριτά Μαθηματικά" instructorId="08" size="large"/>
+<course id="course02" name="Μαθηματικός Λογισμός" instructorId="17" size="large"/>
+<course id="course03" name="Εισαγωγή στον Προγραμματισμό Υπολογιστών" instructorId="04" size="large"/>
+<course id="course04" name="Εισαγωγή στην Επιστήμη Υπολογιστών" instructorId="10" size="large"/>
+<course id="course05" name="Εισαγωγή στην Οικονομική Επιστήμη" instructorId="06" size="large"/>
+</semester>
+
+<semester id="semester3">
+<course id="course06" name="Δομές Δεδομένων" instructorId="14" size="large"/>
+<course id="course07" name="Οργάνωση Συστημάτων Υπολογιστών" instructorId="13" size="large"/>
+<course id="course08" name="Πιθανότητες" instructorId="09" size="large"/>
+<course id="course09" name="Προγραμματισμός Υπολογιστών με C++" instructorId="01" size="large"/>
+</semester>
+
+<semester id="semester5">
+<course id="course10" name="Ανάλυση και Σχεδίαση Πληροφοριακών Συστημάτων" instructorId="11" size="medium"/>
+<course id="course11" name="Δίκτυα Επικοινωνιών" instructorId="02" size="medium"/>
+<course id="course12" name="Σχεδιασμός Βάσεων Δεδομένων" instructorId="05" size="medium"/>
+<course id="course13" name="Λογική" instructorId="18" size="medium"/>
+<course id="course14" name="Ανάλυση και Σχεδίαση Επιχειρηματικών Εφαρμογών" instructorId="11" size="medium"/>
+<course id="course15" name="Εφαρμοσμένη Αριθμητική Ανάλυση" instructorId="12" size="medium"/>
+<course id="course16" name="Κατανεμημένα Συστήματα" instructorId="07" size="medium"/>
+<course id="course17" name="Τεχνητή Νοημοσύνη" instructorId="01" size="medium"/>
+</semester>
+
+<semester id="semester7">
+<course id="course18" name="Ασύρματα Δίκτυα και Κινητές Επικοινωνίες" instructorId="16" size="medium"/>
+<course id="course19" name="Γραφικά Υπολογιστών" instructorId="15" size="medium"/>
+<course id="course20" name="Επικοινωνία Ανθρώπου-Υπολογιστή" instructorId="15" size="medium"/>
+<course id="course21" name="Εξόρυξη Γνώσης από Βάσεις Δεδομένων και τον Παγκόσμιο Ιστό" instructorId="03" size="medium"/>
+</semester>
+
+</courses>

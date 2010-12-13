@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<slots>
+
+<daySlots day="Monday">
+<slot id="slot01" roomId="AD" startTime="9"/>
+<slot id="slot02" roomId="X" startTime="9"/>
+<slot id="slot03" roomId="D21" startTime="11"/>
+<slot id="slot04" roomId="A32" startTime="11"/>
+<slot id="slot05" roomId="D21" startTime="13"/>
+<slot id="slot06" roomId="A32" startTime="13"/>
+<slot id="slot07" roomId="B" startTime="15"/>
+<slot id="slot08" roomId="DO" startTime="15"/>
+<slot id="slot09" roomId="A24" startTime="15"/>
+</daySlots>
+
+<daySlots day="Tuesday">
+<slot id="slot10" roomId="B" startTime="9"/>
+<slot id="slot11" roomId="DO" startTime="9"/>
+<slot id="slot12" roomId="A24" startTime="9"/>
+<slot id="slot13" roomId="D23" startTime="9"/>
+<slot id="slot14" roomId="B" startTime="11"/>
+<slot id="slot15" roomId="A25" startTime="11"/>
+<slot id="slot16" roomId="D23" startTime="11"/>
+<slot id="slot17" roomId="B" startTime="13"/>
+<slot id="slot18" roomId="DO" startTime="13"/>
+<slot id="slot19" roomId="A24" startTime="13"/>
+<slot id="slot20" roomId="A25" startTime="13"/>
+<slot id="slot21" roomId="D21" startTime="15"/>
+</daySlots>
+
+<daySlots day="Wednesday">
+<slot id="slot22" roomId="AD" startTime="9"/>
+<slot id="slot23" roomId="D12" startTime="11"/>
+<slot id="slot24" roomId="A24" startTime="15"/>
+<slot id="slot25" roomId="A25" startTime="15"/>
+<slot id="slot26" roomId="B" startTime="15"/>
+<slot id="slot27" roomId="X" startTime="15"/>
+<slot id="slot28" roomId="A24" startTime="17"/>
+</daySlots>
+
+<daySlots day="Thursday">
+<slot id="slot29" roomId="D21" startTime="9"/>
+<slot id="slot30" roomId="A32" startTime="9"/>
+<slot id="slot31" roomId="D21" startTime="11"/>
+<slot id="slot32" roomId="A32" startTime="11"/>
+<slot id="slot33" roomId="D21" startTime="13"/>
+<slot id="slot34" roomId="A32" startTime="13"/>
+<slot id="slot35" roomId="D21" startTime="15"/>
+<slot id="slot36" roomId="B" startTime="15"/>
+</daySlots>
+
+<daySlots day="Friday">
+<slot id="slot37" roomId="B" startTime="9"/>
+<slot id="slot38" roomId="A24" startTime="9"/> 
+<slot id="slot39" roomId="B" startTime="11"/>
+<slot id="slot40" roomId="DO" startTime="11"/>
+<slot id="slot41" roomId="B" startTime="13"/>
+<slot id="slot42" roomId="DO" startTime="13"/>
+</daySlots>
+
+</slots>

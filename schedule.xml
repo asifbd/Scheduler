@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scheduledCourses>
+
+<semester semesterId="semester1">
+<scheduledCourse courseId="Διακριτά Μαθηματικά" slotId1="slot03" slotId2="slot10"/>
+<scheduledCourse courseId="Μαθηματικός Λογισμός" slotId1="slot14" slotId2="slot24"/>
+<scheduledCourse courseId="Εισαγωγή στον Προγραμματισμό Υπολογιστών" slotId1="slot22" slotId2="slot33"/>
+<scheduledCourse courseId="Εισαγωγή στην Οικονομική Επιστήμη" slotId1="slot17" slotId2="slot39"/>
+<scheduledCourse courseId="Εισαγωγή στην Επιστήμη Υπολογιστών" slotId1="slot01" slotId2="slot41"/>
+</semester>
+
+<semester semesterId="semester3">
+<scheduledCourse courseId="Δομές Δεδομένων" slotId1="slot01" slotId2="slot10"/>
+<scheduledCourse courseId="Οργάνωση Συστημάτων Υπολογιστών" slotId1="slot07" slotId2="slot17"/>
+<scheduledCourse courseId="Πιθανότητες" slotId1="slot24" slotId2="slot29"/>
+<scheduledCourse courseId="Προγραμματισμός Υπολογιστών με C++" slotId1="slot05" slotId2="slot35"/>
+</semester>
+
+<semester semesterId="semester5">
+<scheduledCourse courseId="Σχεδιασμός Βάσεων Δεδομένων" slotId1="slot03" slotId2="slot21"/>
+<scheduledCourse courseId="Λογική" slotId1="slot17" slotId2="slot23"/>
+<scheduledCourse courseId="Ανάλυση και Σχεδίαση Επιχειρηματικών Εφαρμογών" slotId1="slot05" slotId2="slot28"/>
+<scheduledCourse courseId="Κατανεμημένα Συστήματα" slotId1="slot14" slotId2="slot29"/>
+<scheduledCourse courseId="Ανάλυση και Σχεδίαση Πληροφοριακών Συστημάτων" slotId1="slot07" slotId2="slot31"/>
+<scheduledCourse courseId="Τεχνητή Νοημοσύνη" slotId1="slot10" slotId2="slot33"/>
+<scheduledCourse courseId="Εφαρμοσμένη Αριθμητική Ανάλυση" slotId1="slot35" slotId2="slot37"/>
+<scheduledCourse courseId="Δίκτυα Επικοινωνιών" slotId1="slot24" slotId2="slot39"/>
+</semester>
+
+<semester semesterId="semester7">
+<scheduledCourse courseId="Γραφικά Υπολογιστών" slotId1="slot07" slotId2="slot10"/>
+<scheduledCourse courseId="Ασύρματα Δίκτυα και Κινητές Επικοινωνίες" slotId1="slot17" slotId2="slot31"/>
+<scheduledCourse courseId="Επικοινωνία Ανθρώπου-Υπολογιστή" slotId1="slot14" slotId2="slot37"/>
+<scheduledCourse courseId="Εξόρυξη Γνώσης από Βάσεις Δεδομένων και τον Παγκόσμιο Ιστό" slotId1="slot24" slotId2="slot41"/>
+</semester>
+
+</scheduledCourses>
+
