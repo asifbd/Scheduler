@@ -1,4 +1,4 @@
-##Scheduler
+#Scheduler
 This is a simple program in java that constructs time schedules based on certain parameters(rooms, instructors, courses etc). It utilizes the Beam Search algorithm and was made for the A.I. course in my univercity.
 
 ##Input/Output
