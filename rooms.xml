@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rooms>
+
+<room id="A24" name="Α24" size="medium"/>
+<room id="A25" name="A25" size="medium"/>
+<room id="A32" name="A32" size="medium"/>
+<room id="D12" name="Δ12" size="medium"/>
+<room id="D23" name="Δ23" size="medium"/>
+<room id="D21" name="Δ21" size="large"/>
+<room id="AD" name="Αμφ. Δεριγνύ" size="large"/>
+<room id="B" name="Αμφ. Β" size="large"/>
+<room id="DO" name="Δ Οικ." size="large"/>
+<room id="X" name="Χημείο" size="large"/>
+
+</rooms>
