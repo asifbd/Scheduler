@@ -3,10 +3,10 @@ This is a simple program in java that constructs time schedules based on certain
 
 ##Input/Output
 The input of the program consists of four files:<br/>
--[courses.xml](Scheduler/courses.xml) that has the ids and the names of all the courses that must be included in the time schedule, their semester, instructor's id as well as the size of the room that is required for the course.<br/>
--[rooms.xml](Scheduler/rooms.xml) that has the ids of all the available rooms, their names as well as their size (medium, large).<br/>
--[slots.xml](Scheduler/slots.xml) that has the time slots (2*60 minutes each from Monday till Friday) for when each room is available.<br/>
--[instructors.xml](Scheduler/instructors.xml) that has the instructors' ids, names as well as the days, time slots in which they are not available for teaching.
+-[courses.xml](Scheduler/blob/master/courses.xml) that has the ids and the names of all the courses that must be included in the time schedule, their semester, instructor's id as well as the size of the room that is required for the course.<br/>
+-[rooms.xml](Scheduler/blob/master/rooms.xml) that has the ids of all the available rooms, their names as well as their size (medium, large).<br/>
+-[slots.xml](Scheduler/blob/master/slots.xml) that has the time slots (2*60 minutes each from Monday till Friday) for when each room is available.<br/>
+-[instructors.xml](Scheduler/blob/master/instructors.xml) that has the instructors' ids, names as well as the days, time slots in which they are not available for teaching.
 (the names of the files are not important).<br/>
 The calculated schedule can be saved as a .txt, .xml and .html file.
 

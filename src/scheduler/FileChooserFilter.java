@@ -21,23 +21,28 @@ public class FileChooserFilter extends FileFilter {
         this(".xml files");
     }
 
-    /** Constructor that takes as a parameter a Filter Description*/
-    public FileChooserFilter(String desc){
-        if(desc.equalsIgnoreCase("") || desc==null){
+    /** Constructor that takes as a parameter a Filter Description
+     * @param description 
+     */
+    public FileChooserFilter(String description){
+        if(description.equalsIgnoreCase("") || description==null){
             this.desc=".xml files";
             showOnlyXML=true;
         } else{
             showOnlyXML=false;
-            this.desc=desc;
+            this.desc=description;
         }
     }
 
-    /** Accept all directories and all gif, jpg, tiff, or png files.*/
-    public boolean accept(File f) {
-        if (f.isDirectory())
+    /** Accept all directories and all gif, jpg, tiff, or png files.
+     * @param file
+     * @return  
+     */
+    public boolean accept(File file) {
+        if (file.isDirectory())
             return true;
 
-        String extension = getExtension(f);
+        String extension = getExtension(file);
         if (extension != null) {
             if (extension.equals(html) ||
                     ((extension.equals(txt) || extension.equals(xml)) && !showOnlyXML) )
@@ -46,12 +51,17 @@ public class FileChooserFilter extends FileFilter {
         return false;
     }
 
-    /** The description of this filter*/
+    /** The description of this filter
+     * @return 
+     */
     public String getDescription() {
         return desc;
     }
 
-    /** Get the extension of a file. */
+    /** Get the extension of a file.
+     * @param f
+     * @return  
+     */
     public static String getExtension(File f) {
         String s = f.getName();
         int i = s.lastIndexOf('.');
@@ -60,7 +70,10 @@ public class FileChooserFilter extends FileFilter {
         return null;
     }
 
-    /** Check if the extension belongs to the ones recognised by the filter */
+    /** Check if the extension belongs to the ones recognised by the filter
+     * @param ext 
+     * @return 
+     */
     public static boolean isAcceptableExtension(String ext){
          if (ext.equalsIgnoreCase(html) || ext.equalsIgnoreCase(txt)
                  || ext.equalsIgnoreCase(xml) )

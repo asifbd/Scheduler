@@ -1,6 +1,11 @@
 
 package scheduler;
 
+import scheduler.components.Room;
+import scheduler.components.Component;
+import scheduler.components.Instructor;
+import scheduler.components.Course;
+import scheduler.components.Slot;
 import java.io.*;
 import java.util.*;
 import javax.swing.*;
@@ -9,6 +14,7 @@ import org.w3c.dom.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.border.*;
+import scheduler.components.RoomSize;
 
 /** The class that handles the input of the initial parameters and finds the optimum program based on a beam search algorithm. */
 class StateExplorer extends ArrayList<ScheduleCourses> {
@@ -299,7 +305,7 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
         for (int i = 0; i < schedule.size(); i++) {
             if(!schedule.get(i).isNull()){
                 //Limitation 5 (each course must be taught in a room big enough)
-                if (schedule.get(i).getRoomSize() == Room.LARGE && slots.get(i).getRoomSize()== Room.MEDIUM ) {
+                if (schedule.get(i).getRoomSize() == RoomSize.LARGE && slots.get(i).getRoomSize()== RoomSize.MEDIUM ) {
                     schedule.setHeuristicScore(schedule.getHeuristicScore() + 3);
                 }
                 //Limitation 7 (an instructor must teach only in days he is available)
@@ -350,7 +356,7 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
                 String roomId = element.getAttribute("roomId");
                 int time = Slot.getTimeSlot(element.getAttribute("startTime"));
                 String slotId = element.getAttribute("id");
-                int roomSize = rooms.get(rooms.indexOf(new Room( roomId, Component.NULL_NAME, Component.NULL_ID)) ).getSize() ;
+                RoomSize roomSize = rooms.get(rooms.indexOf(new Room( roomId, Component.NULL_NAME, RoomSize.NULL)) ).getSize() ;
                 Slot slot = new Slot( time, day, slotId, roomId, roomSize);
                 slots.add(slot); 
             }

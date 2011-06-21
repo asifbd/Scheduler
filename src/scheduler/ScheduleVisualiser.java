@@ -317,7 +317,11 @@ public class ScheduleVisualiser {
         return frame;
     }
 
-    /** Returns an ImageIcon, or null if the path was invalid. */
+    /** Returns an ImageIcon, or null if the path was invalid.
+     * @param path
+     * @param description
+     * @return  
+     */
     public static ImageIcon createImageIcon(String path, String description) {
         java.net.URL imgURL = StateExplorer.class.getResource(path);
         if(imgURL != null){
@@ -327,7 +331,11 @@ public class ScheduleVisualiser {
     }
 
     /**Creates a window so that the user can choose a file for saving/loading and
-     * then it returns that file*/
+     * then it returns that file
+     * @param action
+     * @param filterDescription 
+     * @return  
+     */
     public static File chooseFile(String action, String filterDescription){
         JFileChooser fileChooser=new JFileChooser("Choose a file to...");
         //Add a custom file filter and disable the default

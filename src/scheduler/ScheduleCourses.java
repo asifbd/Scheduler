@@ -1,6 +1,8 @@
 
 package scheduler;
 
+import scheduler.components.Component;
+import scheduler.components.Course;
 import java.util.*;
 
 public class ScheduleCourses extends ArrayList<Course> implements Comparable {
@@ -50,7 +52,9 @@ public class ScheduleCourses extends ArrayList<Course> implements Comparable {
         return 47 + 8 * heuristicScore;
     }
 
-    /** Compares the schedule's id with o's and returns true if they are equal */
+    /** Compares the schedule's id with o's and returns true if they are equal
+     * @param s 
+     */
     @Override public boolean equals(Object s) {
         if (s == null)  // Null references are not equal to this instance.
             return false;
