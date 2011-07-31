@@ -36,7 +36,7 @@ public class FileChooserFilter extends FileFilter {
 
     /** Accept all directories and all gif, jpg, tiff, or png files.
      * @param file
-     * @return  
+     * @return True if the file is accepted, false otherwise
      */
     public boolean accept(File file) {
         if (file.isDirectory())
@@ -52,15 +52,15 @@ public class FileChooserFilter extends FileFilter {
     }
 
     /** The description of this filter
-     * @return 
+     * @return the shortcuts that pass through the filter
      */
     public String getDescription() {
         return desc;
     }
 
     /** Get the extension of a file.
-     * @param f
-     * @return  
+     * @param f 
+     * @return  the extension of a file as a string
      */
     public static String getExtension(File f) {
         String s = f.getName();
@@ -71,8 +71,8 @@ public class FileChooserFilter extends FileFilter {
     }
 
     /** Check if the extension belongs to the ones recognised by the filter
-     * @param ext 
-     * @return 
+     * @param ext the file extension to be checked
+     * @return true if it is acceptable, false otherwise
      */
     public static boolean isAcceptableExtension(String ext){
          if (ext.equalsIgnoreCase(html) || ext.equalsIgnoreCase(txt)

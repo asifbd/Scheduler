@@ -42,7 +42,7 @@ public class Room extends Component {
 
     /**Compares the two Rooms based on their size.
      * @param o
-     * @return  
+     * @return 0 if they are equal, -1 if the given o room is smaller, 1 if the given o room is larger
      */
     public int compareTo(Room o) {
         if( o.getSize() == this.size   )
@@ -75,8 +75,7 @@ public class Room extends Component {
     }
 
     /** Returns the constant corresponding to the given string/size.
-     * @param room_size The string that represents the size of the room.
-     * @return  
+     * @param room_size The string that represents the size of the room. 
      */
     public static RoomSize getRoomSize(String room_size){
         if (room_size.equalsIgnoreCase(RoomSize.LARGE.name())) return RoomSize.LARGE;
@@ -84,14 +83,11 @@ public class Room extends Component {
         return RoomSize.NULL;
     }
 
-    /**Returns true if the room size given in the argument is a valid size.
-     * @param roomSize
-     * @return  
+    /**Returns true if the room size given in the argument is a valid size. 
      */
     public static boolean isValidRoomSize(RoomSize roomSize){ return (roomSize==RoomSize.LARGE || roomSize==RoomSize.MEDIUM); }
 
-    /**Returns true if the given elements id  is "Null".
-     * @return 
+    /**Returns true if the given elements id  is "Null". 
      */
     public boolean isNull(){
         return this.getId().equalsIgnoreCase(Room.NULL_NAME);

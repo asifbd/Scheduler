@@ -33,10 +33,11 @@ public class ScheduleVisualiser {
             }
 
             private void loadDefaults() {
-                stateExplorer.getRoomsFromXML("rooms.xml");
-                stateExplorer.getInstructorsFromXML("instructors.xml");
-                stateExplorer.getSlotsFromXML("slots.xml");
-                stateExplorer.getCoursesFromXML("courses.xml");
+                stateExplorer.getRoomsFromXML("rooms.xml", false);
+                stateExplorer.getInstructorsFromXML("instructors.xml", false);
+                stateExplorer.getSlotsFromXML("slots.xml", false);
+                stateExplorer.getCoursesFromXML("courses.xml", false);
+                JOptionPane.showMessageDialog(new JFrame(), "Loaded default data files succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
             }
         });
         toolBar.add(loadDefaults);
@@ -114,10 +115,11 @@ public class ScheduleVisualiser {
             }
 
             private void loadDefaults() {
-                stateExplorer.getRoomsFromXML("rooms.xml");
-                stateExplorer.getInstructorsFromXML("instructors.xml");
-                stateExplorer.getSlotsFromXML("slots.xml");
-                stateExplorer.getCoursesFromXML("courses.xml");
+                stateExplorer.getRoomsFromXML("rooms.xml", false);
+                stateExplorer.getInstructorsFromXML("instructors.xml", false);
+                stateExplorer.getSlotsFromXML("slots.xml", false);
+                stateExplorer.getCoursesFromXML("courses.xml", false);
+                JOptionPane.showMessageDialog(new JFrame(), "Loaded default data files succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
             }
         });
         loadDefaults.setMnemonic('D');
@@ -136,7 +138,7 @@ public class ScheduleVisualiser {
             private void loadRooms() {
                 File file = chooseFile("Load Rooms", ".xml");
                 if (file != null )
-                    stateExplorer.getRoomsFromXML(file.getAbsolutePath() );
+                    stateExplorer.getRoomsFromXML(file.getAbsolutePath(), true);
             }
         });
         loadRooms.setMnemonic('R');
@@ -155,7 +157,7 @@ public class ScheduleVisualiser {
             private void loadInstructors() {
                 File file = chooseFile("Load Instructors", ".xml");
                 if (file != null )
-                    stateExplorer.getInstructorsFromXML(file.getAbsolutePath() );
+                    stateExplorer.getInstructorsFromXML(file.getAbsolutePath(), true);
             }
         });
         loadInstructors.setMnemonic('I');
@@ -174,7 +176,7 @@ public class ScheduleVisualiser {
             private void loadSlots() {
                 File file = chooseFile("Load Slots", ".xml");
                 if (file != null )
-                    stateExplorer.getSlotsFromXML(file.getAbsolutePath() );
+                    stateExplorer.getSlotsFromXML(file.getAbsolutePath(), true);
             }
         });
         loadSlots.setMnemonic('L');
@@ -193,7 +195,7 @@ public class ScheduleVisualiser {
             private void loadCourses() {
                 File file = chooseFile("Load Courses", ".xml");
                 if (file != null )
-                    stateExplorer.getCoursesFromXML(file.getAbsolutePath() );
+                    stateExplorer.getCoursesFromXML(file.getAbsolutePath(), true);
             }
         });
         loadCourses.setMnemonic('C');
@@ -320,7 +322,7 @@ public class ScheduleVisualiser {
     /** Returns an ImageIcon, or null if the path was invalid.
      * @param path
      * @param description
-     * @return  
+     * @return the created imageicon or null if it wasn't created succesfully
      */
     public static ImageIcon createImageIcon(String path, String description) {
         java.net.URL imgURL = StateExplorer.class.getResource(path);
@@ -334,7 +336,7 @@ public class ScheduleVisualiser {
      * then it returns that file
      * @param action
      * @param filterDescription 
-     * @return  
+     * @return  the file selected by the user or null if none was selected
      */
     public static File chooseFile(String action, String filterDescription){
         JFileChooser fileChooser=new JFileChooser("Choose a file to...");

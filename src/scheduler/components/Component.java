@@ -8,7 +8,7 @@ public abstract class Component {
     public final static String NULL_NAME = "Null";
 
     /**Returns true if the given element is Null.
-     * @return 
+     * @return true if the given element is null, false otherwise
      */
     public abstract boolean isNull();
 }

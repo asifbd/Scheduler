@@ -48,7 +48,7 @@ public class Course extends Component {
 
     /** Returns true if the course can fit to the room.
      * @param room The room that will be checked to see if the course can fit there.
-     * @return  
+     * @return false if (roomSize == LARGE && room.getSize() == MEDIUM), true otherwise
      */
     public boolean fits(Room room){
         if(roomSize == RoomSize.LARGE && room.getSize() == RoomSize.MEDIUM)  return false;
@@ -57,16 +57,16 @@ public class Course extends Component {
 
     /** Returns true if the course can fit exactly to the room (medium room and medium course or large room and large course).
      * @param room The room that will be checked to see if the course can fit there.
-     * @return  
+     * @return true if the room sizes are equal, false otherwise
      */
     public boolean fitsExactly(Room room){
         if(roomSize ==  room.getSize())  return true;
         return false;
     }
 
-    /**Returns true if the teacher provided in the arguments teaches the class.
+    /**Returns true if the teacher provided in the arguments teaches the class
      *@param teacher The instructor of the class.
-     * @return  
+     * @return  true if the teacher provided in the arguments teaches the class, false otherwise
      */
     public boolean isTeachedBy(Instructor teacher){
         return (teacher.getId() == this.instructorId);

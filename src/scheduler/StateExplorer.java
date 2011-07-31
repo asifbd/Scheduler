@@ -44,10 +44,11 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
      */
     public StateExplorer(String roomFile, String instructorFile, String courseFile, String slotFile){
         super();
-        this.getRoomsFromXML(roomFile);
-        this.getInstructorsFromXML(instructorFile);
-        this.getSlotsFromXML(slotFile);
-        this.getCoursesFromXML(courseFile);
+        this.getRoomsFromXML(roomFile, false);
+        this.getInstructorsFromXML(instructorFile, false);
+        this.getSlotsFromXML(slotFile, false);
+        this.getCoursesFromXML(courseFile, false);
+         JOptionPane.showMessageDialog(new JFrame(), "Loaded info succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
     }
 
     /** Returns an ArrayList with the semesters included in the courses given.
@@ -94,7 +95,7 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
                 out.write("<div>\n<table border=\"1\"; cellspacing='0'; >");
                 out.write("<tr><th colspan=\"6\">" + semesters.get(j).replace("semester", "Semester ") + "</th><tr>");
                 out.write("<tr><td width=\"100px\" height=\"40px\"></td>");
-                for (int i = 0; i < Slot.FRIDAY +1; i++) {
+                for (int i = 0; i < 6; i++) {
                     out.write("<td width=\"160px\" height=\"40px\">" + Slot.getDay(i) + "</td>");
                 }
                 out.write("</tr>");
@@ -337,7 +338,7 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
 
      /**Reads the availability of each room from an .xml file and add the slots in the appropriate LinkedList.
      * @param fileName The name of the .xml file.*/
-    public ArrayList<Slot> getSlotsFromXML(String fileName) {
+    public ArrayList<Slot> getSlotsFromXML(String fileName, boolean notify) {
         NodeList list = XMLElements(fileName);
         int day = Slot.NULL_DAY;
         ArrayList<Slot> slots = new ArrayList<Slot>();
@@ -361,14 +362,14 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
                 slots.add(slot); 
             }
         }
-        JOptionPane.showMessageDialog(new JFrame(), "Loaded slots succesfully.", "info", JOptionPane.INFORMATION_MESSAGE);
+        if(notify) JOptionPane.showMessageDialog(new JFrame(), "Loaded slots succesfully.", "info", JOptionPane.INFORMATION_MESSAGE);
         this.slots = new ArrayList<Slot>(slots);
         return slots;
     }
 
     /** Reads the instructors from an xml file and adds them to the LinkedList.
      * @param fileName The name of the .xml file.*/
-    public ArrayList<Instructor> getInstructorsFromXML(String fileName) {
+    public ArrayList<Instructor> getInstructorsFromXML(String fileName, boolean notify) {
         NodeList list = this.XMLElements(fileName);
         ArrayList<Instructor> instructors = new ArrayList<Instructor>();
         int id = -1;
@@ -390,14 +391,14 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
                 }
             }
         }
-        JOptionPane.showMessageDialog(new JFrame(), "Loaded instructors succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
+        if(notify) JOptionPane.showMessageDialog(new JFrame(), "Loaded instructors succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
         this.instructors = new ArrayList<Instructor>(instructors);
         return instructors;
     }
 
     /** Reads the courses from an xml file and adds them to the LinkedList.
     * @param fileName The name of the .xml file.*/
-    public ArrayList<Course> getCoursesFromXML(String fileName) {
+    public ArrayList<Course> getCoursesFromXML(String fileName, boolean notify) {
         NodeList list = this.XMLElements(fileName);
         String semester = null;
         ArrayList<Course> courses = new ArrayList<Course>();
@@ -424,13 +425,13 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
             courses.add(new Course());
         this.courses = new ArrayList<Course>(courses);
         this.semesters = this.getSemesters(courses);
-        JOptionPane.showMessageDialog(new JFrame(), "Loaded courses succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
+        if(notify) JOptionPane.showMessageDialog(new JFrame(), "Loaded courses succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
         return courses;
     }
 
     /** Reads the rooms from an xml file and adds them to the LinkedList.
      * @param fileName The name of the .xml file.*/
-    public ArrayList<Room> getRoomsFromXML(String fileName) {
+    public ArrayList<Room> getRoomsFromXML(String fileName, boolean notify) {
         NodeList list = this.XMLElements(fileName);
         ArrayList<Room> rooms = new ArrayList<Room>();
         for (int i = 0; i < list.getLength(); i++) {
@@ -444,7 +445,7 @@ class StateExplorer extends ArrayList<ScheduleCourses> {
                 }catch(Exception e){ JOptionPane.showMessageDialog(new JFrame(), "Error in the format of " + fileName+ " .", "Error", JOptionPane.ERROR_MESSAGE);}
             }
         }
-        JOptionPane.showMessageDialog(new JFrame(), "Loaded rooms succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
+        if(notify) JOptionPane.showMessageDialog(new JFrame(), "Loaded rooms succesfully.", "Info", JOptionPane.INFORMATION_MESSAGE);
         this.rooms = new ArrayList<Room>(rooms);
         return rooms;
     }
